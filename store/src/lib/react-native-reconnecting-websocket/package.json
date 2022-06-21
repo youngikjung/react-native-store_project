@@ -1,0 +1,49 @@
+{
+  "_args": [
+    [
+      "react-native-reconnecting-websocket@1.0.2",
+      "C:\\Users\\zenng\\Desktop\\002.project\\whitemug.pos.v1"
+    ]
+  ],
+  "_from": "react-native-reconnecting-websocket@1.0.2",
+  "_id": "react-native-reconnecting-websocket@1.0.2",
+  "_inBundle": false,
+  "_integrity": "sha512-tl47xHwjnl61nqAjeyGAih0O75obUsxgELx5i3oCM4jc24ER6fUphAJRhrPiPhQcel8gsvCJQFPGzFGYKM+ZIQ==",
+  "_location": "/react-native-reconnecting-websocket",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "react-native-reconnecting-websocket@1.0.2",
+    "name": "react-native-reconnecting-websocket",
+    "escapedName": "react-native-reconnecting-websocket",
+    "rawSpec": "1.0.2",
+    "saveSpec": null,
+    "fetchSpec": "1.0.2"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-reconnecting-websocket/-/react-native-reconnecting-websocket-1.0.2.tgz",
+  "_spec": "1.0.2",
+  "_where": "C:\\Users\\zenng\\Desktop\\002.project\\whitemug.pos.v1",
+  "author": {
+    "name": "1498710037@qq.com"
+  },
+  "bugs": {
+    "url": "https://github.com/React-Sextant/react-native-reconnecting-websocket/issues"
+  },
+  "description": "websocket module",
+  "homepage": "https://github.com/React-Sextant/react-native-reconnecting-websocket#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "name": "react-native-reconnecting-websocket",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/React-Sextant/react-native-reconnecting-websocket.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.2"
+}

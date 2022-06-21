@@ -1,0 +1,11 @@
+rootProject.name = 'throo_ceo'
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+apply from: '../node_modules/react-native-unimodules/gradle.groovy'; 
+includeUnimodulesProjects();
+include ':RNSendIntentModule', ':app'
+project(':RNSendIntentModule').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-send-intent/android')
+include ':app'
+include ':react-native-version-check'
+project(':react-native-version-check').projectDir = new File(rootProject.projectDir,    '../node_modules/react-native-version-check/android')
+include ':lottie-react-native'
+project(':lottie-react-native').projectDir = new File(rootProject.projectDir, '../node_modules/lottie-react-native/src/android')

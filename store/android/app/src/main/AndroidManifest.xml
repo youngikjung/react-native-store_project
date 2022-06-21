@@ -1,0 +1,125 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.throo_ceo">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+
+    <application
+      android:name=".MainApplication"
+      android:label="@string/app_name"
+      android:icon="@mipmap/ic_launcher"
+      android:roundIcon="@mipmap/ic_launcher_round"
+      android:allowBackup="false"
+      android:theme="@style/AppTheme">
+
+      <meta-data android:name="com.dieam.reactnativepushnotification.notification_channel_name" android:value="com.throo_ceo"/>
+      <meta-data android:name="com.dieam.reactnativepushnotification.notification_channel_description" android:value="com.throo_ceo"/>
+      <receiver android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationActions" />
+      <receiver android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationPublisher" />
+      <receiver android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationBootEventReceiver">
+        <intent-filter>
+          <action android:name="android.intent.action.BOOT_COMPLETED" />
+        </intent-filter>
+      </receiver>
+      <service android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationRegistrationService"/>
+      <service android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationListenerService" android:exported="false" >
+        <intent-filter>
+          <action android:name="com.google.firebase.MESSAGING_EVENT" />
+        </intent-filter>
+      </service>
+
+      <activity
+        android:name=".MainActivity"
+        android:label="@string/app_name"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+        android:launchMode="singleTask"
+        android:windowSoftInputMode="adjustResize">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+      </activity>
+
+    </application>
+
+   <queries>
+      <package android:name="com.shcard.smartpay"/>
+      <package android:name="com.kbcard.cxh.appcard" />
+      <package android:name="kr.co.samsungcard.mpocket" />
+      <package android:name="com.nhn.hangameotp" />
+      <package android:name="com.sci.siren24.ipin" />
+      <package android:name="com.kbstar.liivbank"/>
+      <package android:name="com.kbstar.reboot"/>
+      <package android:name="nh.smart.nhallonepay"/>
+      <package android:name="com.lcacApp"/>
+      <package android:name="com.shinhancard.smartshinhan"/>
+      <package android:name="com.wooribank.smart.npib"/>
+      <package android:name="com.wooricard.smartapp"/>
+      <package android:name="com.hanaskcard.paycla"/>
+      <package android:name="com.hanaskcard.rocomo.potal"/>
+      <package android:name="kr.co.hanamembers.hmscustomer"/>
+      <package android:name="com.hyundaicard.appcard"/>
+      <package android:name="com.lumensoft.touchenappfree"/>
+      <package android:name="com.ssg.serviceapp.android.egiftcertificate"/>
+      <package android:name="com.nhn.android.search"/>
+      <package android:name="com.samsung.android.spay"/>
+      <package android:name="com.samsung.android.spaylite"/>
+      <package android:name="com.lge.lgpay"/>
+      <package android:name="com.kakao.talk"/>
+      <package android:name="viva.republica.toss"/>
+      <package android:name="kvp.jjy.MispAndroid320"/>
+      <package android:name="com.nhnent.payapp"/>
+      <package android:name="com.ahnlab.v3mobileplus"/>
+      <package android:name="com.TouchEn.mVaccine.webs"/>
+      <package android:name="kr.co.shiftworks.vguardweb"/>
+      <package android:name="com.velox.hkmc_tm1k"/>
+      <package android:name="com.ubivelox.uvophone"/>
+      <package android:name="com.obigo.genesis"/>
+      <package android:name="com.skt.tmap.ku"/>
+      <package android:name="com.nhn.android.nmap"/>
+      <package android:name="net.daum.android.map"/>
+      <package android:name="com.obigo.genesis"/>
+      <package android:name="com.citibank.cardapp"/>
+      <package android:name="kr.co.citibank.citimobile"/>
+      <package android:name="com.kbcard.liivbank"/>
+      <package android:name="com.kbcard.reboot"/>
+      <package android:name="com.kftc.bankpay.android"/>
+      <package android:name="kr.co.kfcc.mobilebank"/>
+      <package android:name="com.knb.psb"/>
+      <package android:name="kr.danal.app.damoum"/>
+      <package android:name="com.lottemembers.android"/>
+      <package android:name="com.mysmilepay.app"/>
+
+      <intent>
+         <action android:name="android.intent.action.VIEW" />
+         <data android:scheme="http"/>
+      </intent>
+      <intent>
+         <action android:name="android.intent.action.VIEW" />
+         <data android:scheme="https"/>
+      </intent>
+      <intent>
+         <action android:name="android.intent.action.VIEW" />
+         <data android:scheme="google.navigation" />
+      </intent>
+      <intent>
+         <action android:name="android.intent.action.VIEW" />
+         <data android:scheme="applemaps" />
+      </intent>
+      <intent>
+         <action android:name="android.intent.action.VIEW" />
+         <data android:scheme="kakaomap" />
+      </intent>
+      <intent>
+         <action android:name="android.intent.action.DIAL" />
+      </intent>
+   </queries>
+   
+</manifest>
